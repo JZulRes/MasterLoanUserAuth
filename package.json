@@ -1,0 +1,16 @@
+{
+  "name": "master-loan-user-auth",
+  "version": "0.0.0",
+  "description": "Description for MasterLoanUserAuth",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "generator-jhipster": "5.6.1"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}
