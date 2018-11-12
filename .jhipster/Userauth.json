@@ -1,0 +1,45 @@
+{
+    "name": "Userauth",
+    "fields": [
+        {
+            "fieldName": "cedulaCustomer",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "typeIdCustomer",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "userName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181112164211",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "userauth",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "MasterLoanUserAuth",
+    "applications": "*",
+    "microserviceName": "MasterLoanUserAuth"
+}

@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="userauth">
+            <h2><span>Userauth</span> {{userauth.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Cedula Customer</span></dt>
+                <dd>
+                    <span>{{userauth.cedulaCustomer}}</span>
+                </dd>
+                <dt><span>Type Id Customer</span></dt>
+                <dd>
+                    <span>{{userauth.typeIdCustomer}}</span>
+                </dd>
+                <dt><span>User Name</span></dt>
+                <dd>
+                    <span>{{userauth.userName}}</span>
+                </dd>
+                <dt><span>Password</span></dt>
+                <dd>
+                    <span>{{userauth.password}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/userauth', userauth.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
